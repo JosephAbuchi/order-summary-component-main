@@ -135,5 +135,8 @@ aside p {
 @media only screen and (max-width: 375px) {
   body {
     margin: 0;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
   }
 }
