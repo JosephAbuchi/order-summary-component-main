@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Red Hat Display', sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  max-width: 22rem;
+  border-radius: 15px;
+}
+
+.illustration-hero {
+  width: 21.75rem;
+  border-radius: 13px 13px 0 0;
+}
+
+aside {
+  background-color: white;
+  margin-top: -1.4rem;
+  border-radius: 0 0 15px 15px;
+}
+
+aside h1 {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+aside p {
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  width: 20rem;
+  padding-left: 2rem;
+}
+
+.annual-plan {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  padding: 1rem;
+  gap: 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.annual-plan img {
+  object-fit: contain;
+  width: 35px;
+}
+
+.annual-plan .price-container:first-of-type {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.annual-plan .price {
+  color: hsl(224, 23%, 55%);
+  font-weight: normal;
+  font-size: 13px;
+}
+
+
+
+.annual-plan .change {
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  padding-left: 4rem;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.annual-plan .change:hover {
+  cursor: pointer;
+  color: hsla(245, 75%, 52%, 0.65);
+}
+
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.35);
+
+}
+
+.payment:hover {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.65);
+}
+
+.cancel {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+}
